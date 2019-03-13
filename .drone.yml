@@ -5,3 +5,10 @@ pipeline:
   test:
     image: node:latest
     commands: npm run test
+  trigger:
+    event:
+    - push
+    - pull_request
+    - tag
+    - promote
+    - rollback    
