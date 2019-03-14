@@ -1,15 +1,6 @@
-pipeline
-  build:
-    image: node
-    commands: npm install
-  test:
-    image: node
-    commands: npm run test
-  trigger:
-    event:
-    - push
-    - pull_request
-    - tag
-    - promote
-    - rollback 
-    branch: master
+kind: pipeline
+name: default
+
+trigger:
+  branch:
+  - master
