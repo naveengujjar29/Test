@@ -1,9 +1,9 @@
-pipeline:
+kind: pipeline
   build:
-    image: node:latest
+    image: node
     commands: npm install
   test:
-    image: node:latest
+    image: node
     commands: npm run test
   trigger:
     event:
