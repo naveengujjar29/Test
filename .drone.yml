@@ -11,4 +11,5 @@ kind: pipeline
     - pull_request
     - tag
     - promote
-    - rollback    
+    - rollback 
+    branch: master
