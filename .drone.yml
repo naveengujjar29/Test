@@ -1,4 +1,4 @@
-kind: pipeline
+pipeline
   build:
     image: node
     commands: npm install
